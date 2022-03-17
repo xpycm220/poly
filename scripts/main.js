@@ -1,4 +1,6 @@
 $(document).ready(function () {
+   console.log('тралала');
+
    //Валидация
    $("input").attr("autocomplete", "off");
 

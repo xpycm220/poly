@@ -93,10 +93,6 @@ $(".rate-in").rateYo({
 });
 
 $('.show-feedback').click(function () {
-
-
-
-
    if ($(this).hasClass('show')) {
       $(this).removeClass('show');
       $(this).text('Оставить отзыв');
