@@ -1,0 +1,55 @@
+.section-login {
+  padding: 110px 0;
+}
+
+.section-login__inner {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(184, 184, 184, 0.25);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.section-login__img {
+  width: 490px;
+  width: 41%;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  background-image: url('../img/bg-login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.section-login__form {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 90px 115px;
+}
+
+.section-login .social-list {
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-login__form {
+    padding: 90px 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .section-login {
+    padding: 30px 0;
+  }
+
+  .section-login__form {
+    padding: 45px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-login__img {
+    display: none;
+  }
+}

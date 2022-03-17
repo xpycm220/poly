@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Доставка</title>
+
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/footer.css">
+
+   <link rel="stylesheet" href="css/delivery.css">
+</head>
+
+<body>
+   <header class="header">
+   <div class="header-top">
+      <div class="container">
+         <div class="header-top__inner">
+            <ul class="header-nav">
+               <li class="header-nav__item"><a href="#">О компании</a></li>
+               <li class="header-nav__item"><a href="#">Прайс-лист</a></li>
+               <li class="header-nav__item"><a href="#">Контакты</a></li>
+               <li class="header-nav__item">
+                  <span>Ещё <svg>
+                        <use xlink:href='img/sprite.svg#dropdown-arrow'></use>
+                     </svg></span>
+                  <ul class="header-nav__dropdown">
+                     <li><a href="#">Производители</a></li>
+                     <li><a href="#">Оплата и Доставка</a></li>
+                     <li><a href="#">Монтаж и демонтаж</a></li>
+                     <li><a href="#">Информация</a></li>
+                     <li><a href="#">Частые вопросы</a></li>
+                     <li><a href="#">Монтажным бригадам</a></li>
+                     <li><a href="#">Партнёрство</a></li>
+                     <li><a href="#">Оптовые поставки</a></li>
+                  </ul>
+               </li>
+            </ul>
+
+            <ul class="header-contact">
+               <li>
+                  <a href='tel:+74952272379'>
+                     <img src="img/phone.svg" alt="icon">
+                     +7 (495) 227-23-79
+                  </a>
+               </li>
+               <li>
+                  <a href="mailto:welcome@ruspolik.ru">
+                     <img src="img/email.svg" alt="icon">
+                     welcome@ruspolik.ru
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Заказать звонок</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="header-main">
+      <div class="container">
+         <div class="header-main__inner">
+            <a href="/" class="header-logo">
+               <img src="img/logo.svg" alt="logo">
+            </a>
+
+            <div class="catalog-btn">
+               <button class="toggle-btn"></button>
+               <span class="catalog-btn__text">Каталог продукции</span>
+            </div>
+
+            <form class="header-search">
+               <input type="text" placeholder="Поиск">
+               <button class="header-search__btn">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#search'></use>
+                  </svg>
+               </button>
+            </form>
+
+            <div class="header-action">
+               <a href="#" class="profile-btn">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#person'></use>
+                  </svg>
+                  <span>Профиль</span>
+               </a>
+               <a href="#" class="basket-btn">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#basket'></use>
+                  </svg>
+                  <span>Корзина</span>
+               </a>
+            </div>
+
+            <button class="toggle-btn mmenu-btn"></button>
+
+            <div class="header-catalog">
+               <div class="row">
+                  <ul class="catalog-list">
+                     <li><a href="#">Поликарбонат</a></li>
+                     <li><a href="#">Сотовый поликарбонат</a></li>
+                     <li><a href="#">Монолитный поликарбонат</a></li>
+                     <li><a href="#">Профилированный монолитный поликарбонат</a></li>
+                     <li><a href="#">Комплектующие для поликарбоната</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Профили</a></li>
+                     <li><a href="#">Пристенный</a></li>
+                     <li><a href="#">Коньковый</a></li>
+                     <li><a href="#">Соединительный</a></li>
+                     <li><a href="#">Угловой</a></li>
+                     <li><a href="#">Торцевой</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Крепления</a></li>
+                     <li><a href="#">Саморезы</a></li>
+                     <li><a href="#">Скобы</a></li>
+                     <li><a href="#">Термошайбы</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Для дачи и участка</a></li>
+                     <li><a href="#">Сетки для растений, сада и газона</a></li>
+                     <li><a href="#">Беседки</a></li>
+                     <li><a href="#">Душевые кабины</a></li>
+                  </ul>
+
+                  <ul class="catalog-list">
+                     <li><a href="#">Теплицы и парники</a></li>
+                     <li><a href="#">Теплицы из поликарбоната</a></li>
+                     <li><a href="#">Оборудование и аксессуары для теплиц</a></li>
+                     <li><a href="#">Пленки для теплиц</a></li>
+                     <li><a href="#">Парники из поликарбоната</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Оргстекло</a></li>
+                     <li><a href="#">Экструзионное оргстекло</a></li>
+                     <li><a href="#">Литьевое, блочное оргстекло</a></li>
+                     <li><a href="#">ГОСТированное оргстекло</a></li>
+                     <li><a href="#">Ещё 4</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Баннерная ткань</a></li>
+                     <li><a href="#">Frontlit</a></li>
+                     <li><a href="#">Сетка баннерная</a></li>
+                     <li><a href="#">Люверсы</a></li>
+                     <li><a href="#">Blockout</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">ПЭТ листы</a></li>
+                     <li><a href="#">ПЭТ А</a></li>
+                     <li><a href="#">ПЭТ Г</a></li>
+                  </ul>
+
+                  <ul class="catalog-list">
+                     <li><a href="#">Клей, химия, прочее</a></li>
+                     <li><a href="#">Клей</a></li>
+                     <li><a href="#">Активаторы</a></li>
+                     <li><a href="#">Очиститель</a></li>
+                     <li><a href="#">Моющие средства</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">ПВХ</a></li>
+                     <li><a href="#">Вспененный ПВХ</a></li>
+                     <li><a href="#">Жесткий ПВХ</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Трубы и стержни из оргстекла</a></li>
+                     <li><a href="#">Трубы из оргстекла</a></li>
+                     <li><a href="#">Стержни из оргстекла</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Технические пластики</a></li>
+                     <li><a href="#">АБС</a></li>
+                     <li><a href="#">Полипропилен сотовый</a></li>
+                     <li><a href="#">Полипропилен литой</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Стеклопластик ELYPLAST</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Самоклеящиеся пленки</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Полистирол</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Алюминиевая композитная панель</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+<div class="mobile-menu">
+   <div class="mobile-menu__head">
+      <a href="#" class="mobile-menu__logo">
+         <img src="img/logo.svg" alt="logo">
+      </a>
+      <div class="mobile-menu__close">
+         <svg>
+            <use xlink:href='img/sprite.svg#close'></use>
+         </svg>
+      </div>
+   </div>
+
+   <nav class="mobile-nav">
+      <a href="#">О компании</a>
+      <a href="#">Прайс-лист</a>
+      <a href="#">Контакты</a>
+      <a href="#">Производители</a>
+      <a href="#">Оплата и Доставка</a>
+      <a href="#">Монтаж и демонтаж</a>
+      <a href="#">Информация</a>
+      <a href="#">Частые вопросы</a>
+      <a href="#">Монтажным бригадам</a>
+      <a href="#">Партнёрство</a>
+      <a href="#">Оптовые поставки</a>
+   </nav>
+
+   <div class="mobile-menu__contact">
+      <a href='tel:+74952272379' class=''>+7 (495) 227-23-79</a>
+      <a href="mailto:welcome@ruspolik.ru">welcome@ruspolik.ru</a>
+      <a href="#">Заказать звонок</a>
+   </div>
+</div>
+
+   <div class='container'>
+      <div class="breadcrumbs">
+         <a href="#">Главная</a>
+         <a href="#">Резка</a>
+      </div>
+   </div>
+
+   <section>
+      <div class='container'>
+         <div class="title2 upercase mb50">Доставка</div>
+         <p class="mb50">Доставка товаров нашей компании осуществляется в течение 1–2 дней с момента оформления заказа!
+            В нашей
+            компании проводятся ежедневные акции на бесплатную доставку.</p>
+         <div class="title3 upercase mb50">Тарифы на доставку</div>
+         <div class="delivery-tariff">
+            <div class="swiper-wrapper">
+               <div class="tariff-card">
+                  <div class="tariff-card__title">
+                     до
+                     <span class="tariff-card__num">1.5</span> <br>
+                     тонн
+                  </div>
+
+                  <div class="tariff-card__text">
+                     <b>1 300 ₽</b> + 25 р/км за МКАД
+                  </div>
+               </div>
+               <div class="tariff-card">
+                  <div class="tariff-card__title">
+                     до
+                     <span class="tariff-card__num">3</span> <br>
+                     тонн
+                  </div>
+
+                  <div class="tariff-card__text">
+                     <b>3 000 ₽</b> + 35 р/км за МКАД
+                  </div>
+               </div>
+               <div class="tariff-card">
+                  <div class="tariff-card__title">
+                     до
+                     <span class="tariff-card__num">5</span> <br>
+                     тонн
+                  </div>
+
+                  <div class="tariff-card__text">
+                     <b>5 500 ₽</b> + 25 р/км за МКАД
+                  </div>
+               </div>
+               <div class="tariff-card">
+                  <div class="tariff-card__title">
+                     до
+                     <span class="tariff-card__num">10</span> <br>
+                     тонн
+                  </div>
+
+                  <div class="tariff-card__text">
+                     <b>7 500 ₽</b> + 45 р/км за МКАД
+                  </div>
+               </div>
+               <div class="tariff-card">
+                  <div class="tariff-card__title">
+                     до
+                     <span class="tariff-card__num">20</span> <br>
+                     тонн
+                  </div>
+
+                  <div class="tariff-card__text">
+                     <b>10 000 ₽</b> + 55 р/км за МКАД
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class='container'>
+         <div class="row">
+            <div class="row">
+               <div class="col-sm-6">
+                  <ul class="sq-list fz16 mb10">
+                     <li>Стоимость доставки по г. Москве в пределах МКАД от 1 300 рублей.</li>
+                     <li>В пределах ТТК +1 000 рублей.</li>
+                     <li>В пределах садового кольца +1 500 рублей.</li>
+                     <li>Стоимость доставки за МКАД рассчитывается по формуле ставка по городу + километраж от МКАД,
+                        считается расстояние только до пункта доставки.</li>
+                  </ul>
+               </div>
+               <div class="col-sm-6">
+                  <ul class="sq-list fz16">
+                     <li><b>Время доставки по умолчанию - в течение дня!</b> За час до приезда водитель-экспедитор с
+                        Вами свяжется и предупредит о выезде.</li>
+                     <li>Возможна доставка Курьером на Л/А - от 800 руб. (по Москве и МО).
+                        По России - Транспортными компаниями.</li>
+                     <li>При доставке по России - 100% предоплата. Сроки и ее точная стоимость в каждом конкретном
+                        случае рассчитываются индивидуально.</li>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class='container'>
+         <div class="delivery-banner mb50">
+            <div class="delivery-banner__img">
+               <img src="img/truck.png" alt="auto">
+            </div>
+            <div class="delivery-banner__inner">
+               <div class="title3 delivery-banner__title">Быстрая доставка</div>
+               <p class="delivery-banner__text mb25">У нас вы можете заказать услугу «ЭКСПРЕСС-ДОСТАВКА». Время доставки
+                  в течении 3–4 часов. Информацию
+                  о возможности предоставления услуги уточняйте у наших операторов по тел: <a href='tel:+74959253605'
+                     class=''>+7 495 925-36-05</a> .</p>
+               <a href="#" class="btn-main">Заказать доставку</a>
+            </div>
+         </div>
+
+         <div class="section-item">
+            <div class="title3 mb25 upercase">Бесплатная доставка</div>
+            <p>В нашей компании проводятся ежедневные акции на бесплатную доставку! Акция распространяется на доставку
+               по Москве и МО.</p>
+            <p>Региональные покупатели могут участвовать в акции с доставкой по МСК и МО, но оплачивают доставку от ТК
+               до нужного города по тарифам транспортных компаний. </p>
+            <p>Для того чтобы принять участие в акции Вам необходимо выполнить следующие условия:</p>
+
+            <ul class="sq-list fz16">
+               <li>Сумма вашего заказа должна быть не менее 30 000 рублей. В заказе участвуют товарные позиции сотового
+                  и монолитного поликарбоната толщиной до 10 мм.</li>
+               <li>Ваш объект находится в пределах МКАД или в 30 км от МКАД. Доставка оформляется только в одну точку
+                  выгрузки.</li>
+               <li>Ваш заказ оформлен и оплачен до 16:00 по МСК</li>
+            </ul>
+         </div>
+
+         <div class="section-item">
+            <div class="title3 mb25 upercase">Информация по условиям доставки</div>
+            <p>В нашей компании проводятся ежедневные акции на бесплатную доставку! Акция распространяется на доставку
+               по Москве и МО.</p>
+            <p>Региональные покупатели могут участвовать в акции с доставкой по мск и МО, но оплачивают доставку
+               от ТК до нужного города по тарифам транспортных компаний.</p>
+            <p>Для того чтобы принять участие в акции вам необходимо выполнить следующие условия:</p>
+
+            <ul class="sq-list">
+               <li>Сумма Вашего заказа должна быть не менее 30 000 рублей. В заказе участвуют товарные позиции сотового
+                  и монолитного поликарбоната толщиной до 10 мм.</li>
+               <li>Ваш объект находится в пределах МКАД или в 30 км от МКАД. Доставка оформляется только в одну точку
+                  выгрузки.</li>
+               <li>Ваш заказ оформлен и оплачен до 16:00 по МСК</li>
+            </ul>
+         </div>
+
+         <div class="section-item">
+            <div class="title4 mb25 upercase">Информация по условиям доставки</div>
+            <div class="info-delivery mb25">
+               <ul class="info-delivery__caption">
+                  <li class="active">Правила доставки</li>
+                  <li>Важные моменты</li>
+                  <li>Самовывоз</li>
+               </ul>
+
+               <div class="info-delivery__content active">
+                  <ul class="sq-list">
+                     <li>В услугу доставки, разгрузка листов и изделий из поликарбоната не входит.
+                        При её необходи-мости, при заказе доставки, попросите её включить в ваш счёт. Если вы разгрузку
+                        не оговаривали с менеджером, то огромная просьба не требовать её выполнить у водителя. Он имеет
+                        полное право отказать в этой услуге.</li>
+                     <li>Убедительно вас просим в оговорённый день доставки быть на связи. Перед тем, как выезжать
+                        водитель с вами свяжется по указанному контактному телефону. Если вы окажетесь недоступными,
+                        то доставку могут отложить либо перенести на другой день. При этом, к цене доставки будет
+                        добавлено +50% к стоимости доставки.</li>
+                     <li>Выделенное время разгрузки составляет 30 минут с момента прибытия на объект. Просим обратить
+                        внимание, что в случае задержки ТС на объекте начисляется отдельная плата в сумме 500 рублей
+                        за каждые полчаса.</li>
+                  </ul>
+               </div>
+
+               <div class="info-delivery__content">
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus modi amet, consequuntur
+                     nesciunt inventore recusandae. Cumque saepe ad necessitatibus dicta ipsam, deserunt minus
+                     provident. Enim aliquam excepturi esse omnis magni eligendi, ratione modi ut sapiente cumque
+                     numquam, aperiam dolore error quis dolorem nostrum nesciunt eos. Tenetur quae dolorum error?
+                  </p>
+               </div>
+
+               <div class="info-delivery__content">
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus modi amet, consequuntur
+                     nesciunt inventore recusandae. Cumque saepe ad necessitatibus dicta ipsam, deserunt minus
+                     provident. Enim aliquam excepturi esse omnis magni eligendi, ratione modi ut sapiente cumque
+                     numquam, aperiam dolore error quis dolorem nostrum nesciunt eos. Tenetur quae dolorum error?
+                  </p>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="section-item">
+            <div class="title3 mb25 upercase">Возможность транспортировки поликарбоната</div>
+
+            <div class="transportability">
+               <div class="transportability__img">
+                  <img src="img/img1.jpg" alt="img">
+               </div>
+               <div class="transportability__inner">
+                  <p class="mb25">Если вам необходим сотовый поликарбонат толщиной листа свыше 10 мм (16мм; 20мм; 25мм;
+                     32мм),
+                     то рекомендуем вам заказать раскрой листов по Вашим размерам, так как такие толщины
+                     не сворачиваются
+                     в рулон и доставляются крупногабаритным транспортом, что существенно увеличивает затраты
+                     на доставку.
+                  </p>
+                  <p><b>Радиус скрученного листа сотового поликарбоната для транспортировки</b></p>
+
+                  <div class="transportability-table mb25">
+                     <table>
+                        <tr>
+                           <th>Толщина листа, мм</th>
+                           <td>4</td>
+                           <td>6</td>
+                           <td>8</td>
+                           <td>10</td>
+                           <td>16</td>
+                           <td>20</td>
+                           <td>25</td>
+                           <td>32</td>
+                        </tr>
+                        <tr>
+                           <th>Радиус рулона, м (лист 2.1х12 м)</th>
+                           <td>0,7</td>
+                           <td>1</td>
+                           <td>1,4</td>
+                           <td>1,6</td>
+                           <td colspan="4">Не скручивается!</td>
+                        </tr>
+                     </table>
+                  </div>
+
+                  <p class="fz14 grey">Сотовый поликарбонат с толщиной листа до 16 мм возможно загружать листами,
+                     скрученными в
+                     рулон. При
+                     толщине листа свыше 16 мм — сотовый поликарбонат в рулон не скручивается!</p>
+                  <p class="fz14 grey">Монолитный поликарбонат с толщиной листа до 4 мм может доставляться до объекта
+                     скрученным в рулон.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+   <div class='container'>
+      <div class="footer-top">
+         <div class="footer-main">
+            <div class="footer-main__logo">
+               <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+
+            <div class="footer-main__pay">
+               <img src="img/visa.svg" alt="visa">
+               <img src="img/master.svg" alt="visa">
+               <img src="img/mir.svg" alt="visa">
+               <img src="img/express.jpg" alt="visa">
+            </div>
+
+            <ul class="footer-contact">
+               <li>
+                  <img src="img/phone.svg" alt="icon">
+                  <a href='tel:+77071234567' class=''>+7 (707) 123-45-67</a>
+               </li>
+               <li>
+                  <img src="img/email.svg" alt="icon">
+                  <a href='mailto:welcome@ruspolik.ru'>welcome@ruspolik.ru</a>
+               </li>
+            </ul>
+         </div>
+
+         <div class="footer-menu">
+            <ul>
+               <li>
+                  <a href="#">О нас</a>
+               </li>
+               <li>
+                  <a href="#">О компании</a>
+               </li>
+               <li>
+                  <a href="#">Каталог</a>
+               </li>
+               <li>
+                  <a href="#">Прайс-лист</a>
+               </li>
+               <li>
+                  <a href="#">Контакты</a>
+               </li>
+               <li>
+                  <a href="#">Производители</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">Полезное</a>
+               </li>
+               <li>
+                  <a href="#">Оплата и Доставка</a>
+               </li>
+               <li>
+                  <a href="#">Монтаж и демонтаж</a>
+               </li>
+               <li>
+                  <a href="#">Информация</a>
+               </li>
+               <li>
+                  <a href="#">Частые вопросы</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">Сотрудничество</a>
+               </li>
+               <li>
+                  <a href="#">Монтажным бригадам</a>
+               </li>
+               <li>
+                  <a href="#">Партнёрство</a>
+               </li>
+               <li>
+                  <a href="#">Оптовые поставки</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="footer-bot">
+         <div class="copy">© 2010–2021. ООО «РУСПОЛИК» Все права защищены</div>
+         <div class="footer-bot__link">
+            <a href="#">Пользовательское соглашение</a>
+         </div>
+         <div class="footer-bot__link">
+            <a href="#">Политика конфиденциальности</a>
+         </div>
+      </div>
+   </div>
+</footer>
+   
+
+
+   <script src="scripts/jquery/jquery-3.4.1.min.js"></script>
+   <!-- <script src="scripts/show-more/jquery.show-more.js"></script> -->
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <!-- <script src="scripts/niceSelect/jquery.nice-select.min.js"></script> -->
+   <!-- <script src="scripts/jquery.validate/jquery.validate.min.js"></script> -->
+   <!-- <script src="scripts/mask/mask.js"></script> -->
+
+   <script src="scripts/section-delivery.js"></script>
+   <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Production-card</title>
+
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="scripts/rateyo/jquery.rateyo.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/footer.css">
+
+
+   <link rel="stylesheet" href="css/section-production-card.css">
+   <link rel="stylesheet" href="css/section-services.css">
+   <link rel="stylesheet" href="css/section-bestsellers.css">
+</head>
+
+<body>
+   <header class="header">
+   <div class="header-top">
+      <div class="container">
+         <div class="header-top__inner">
+            <ul class="header-nav">
+               <li class="header-nav__item"><a href="#">О компании</a></li>
+               <li class="header-nav__item"><a href="#">Прайс-лист</a></li>
+               <li class="header-nav__item"><a href="#">Контакты</a></li>
+               <li class="header-nav__item">
+                  <span>Ещё <svg>
+                        <use xlink:href='img/sprite.svg#dropdown-arrow'></use>
+                     </svg></span>
+                  <ul class="header-nav__dropdown">
+                     <li><a href="#">Производители</a></li>
+                     <li><a href="#">Оплата и Доставка</a></li>
+                     <li><a href="#">Монтаж и демонтаж</a></li>
+                     <li><a href="#">Информация</a></li>
+                     <li><a href="#">Частые вопросы</a></li>
+                     <li><a href="#">Монтажным бригадам</a></li>
+                     <li><a href="#">Партнёрство</a></li>
+                     <li><a href="#">Оптовые поставки</a></li>
+                  </ul>
+               </li>
+            </ul>
+
+            <ul class="header-contact">
+               <li>
+                  <a href='tel:+74952272379'>
+                     <img src="img/phone.svg" alt="icon">
+                     +7 (495) 227-23-79
+                  </a>
+               </li>
+               <li>
+                  <a href="mailto:welcome@ruspolik.ru">
+                     <img src="img/email.svg" alt="icon">
+                     welcome@ruspolik.ru
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Заказать звонок</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="header-main">
+      <div class="container">
+         <div class="header-main__inner">
+            <a href="/" class="header-logo">
+               <img src="img/logo.svg" alt="logo">
+            </a>
+
+            <div class="catalog-btn">
+               <button class="toggle-btn"></button>
+               <span class="catalog-btn__text">Каталог продукции</span>
+            </div>
+
+            <form class="header-search">
+               <input type="text" placeholder="Поиск">
+               <button class="header-search__btn">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#search'></use>
+                  </svg>
+               </button>
+            </form>
+
+            <div class="header-action">
+               <a href="#" class="profile-btn">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#person'></use>
+                  </svg>
+                  <span>Профиль</span>
+               </a>
+               <a href="#" class="basket-btn">
+                  <svg>
+                     <use xlink:href='img/sprite.svg#basket'></use>
+                  </svg>
+                  <span>Корзина</span>
+               </a>
+            </div>
+
+            <button class="toggle-btn mmenu-btn"></button>
+
+            <div class="header-catalog">
+               <div class="row">
+                  <ul class="catalog-list">
+                     <li><a href="#">Поликарбонат</a></li>
+                     <li><a href="#">Сотовый поликарбонат</a></li>
+                     <li><a href="#">Монолитный поликарбонат</a></li>
+                     <li><a href="#">Профилированный монолитный поликарбонат</a></li>
+                     <li><a href="#">Комплектующие для поликарбоната</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Профили</a></li>
+                     <li><a href="#">Пристенный</a></li>
+                     <li><a href="#">Коньковый</a></li>
+                     <li><a href="#">Соединительный</a></li>
+                     <li><a href="#">Угловой</a></li>
+                     <li><a href="#">Торцевой</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Крепления</a></li>
+                     <li><a href="#">Саморезы</a></li>
+                     <li><a href="#">Скобы</a></li>
+                     <li><a href="#">Термошайбы</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Для дачи и участка</a></li>
+                     <li><a href="#">Сетки для растений, сада и газона</a></li>
+                     <li><a href="#">Беседки</a></li>
+                     <li><a href="#">Душевые кабины</a></li>
+                  </ul>
+
+                  <ul class="catalog-list">
+                     <li><a href="#">Теплицы и парники</a></li>
+                     <li><a href="#">Теплицы из поликарбоната</a></li>
+                     <li><a href="#">Оборудование и аксессуары для теплиц</a></li>
+                     <li><a href="#">Пленки для теплиц</a></li>
+                     <li><a href="#">Парники из поликарбоната</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Оргстекло</a></li>
+                     <li><a href="#">Экструзионное оргстекло</a></li>
+                     <li><a href="#">Литьевое, блочное оргстекло</a></li>
+                     <li><a href="#">ГОСТированное оргстекло</a></li>
+                     <li><a href="#">Ещё 4</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Баннерная ткань</a></li>
+                     <li><a href="#">Frontlit</a></li>
+                     <li><a href="#">Сетка баннерная</a></li>
+                     <li><a href="#">Люверсы</a></li>
+                     <li><a href="#">Blockout</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">ПЭТ листы</a></li>
+                     <li><a href="#">ПЭТ А</a></li>
+                     <li><a href="#">ПЭТ Г</a></li>
+                  </ul>
+
+                  <ul class="catalog-list">
+                     <li><a href="#">Клей, химия, прочее</a></li>
+                     <li><a href="#">Клей</a></li>
+                     <li><a href="#">Активаторы</a></li>
+                     <li><a href="#">Очиститель</a></li>
+                     <li><a href="#">Моющие средства</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">ПВХ</a></li>
+                     <li><a href="#">Вспененный ПВХ</a></li>
+                     <li><a href="#">Жесткий ПВХ</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Трубы и стержни из оргстекла</a></li>
+                     <li><a href="#">Трубы из оргстекла</a></li>
+                     <li><a href="#">Стержни из оргстекла</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Технические пластики</a></li>
+                     <li><a href="#">АБС</a></li>
+                     <li><a href="#">Полипропилен сотовый</a></li>
+                     <li><a href="#">Полипропилен литой</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Стеклопластик ELYPLAST</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Самоклеящиеся пленки</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Полистирол</a></li>
+                  </ul>
+                  <ul class="catalog-list">
+                     <li><a href="#">Алюминиевая композитная панель</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+<div class="mobile-menu">
+   <div class="mobile-menu__head">
+      <a href="#" class="mobile-menu__logo">
+         <img src="img/logo.svg" alt="logo">
+      </a>
+      <div class="mobile-menu__close">
+         <svg>
+            <use xlink:href='img/sprite.svg#close'></use>
+         </svg>
+      </div>
+   </div>
+
+   <nav class="mobile-nav">
+      <a href="#">О компании</a>
+      <a href="#">Прайс-лист</a>
+      <a href="#">Контакты</a>
+      <a href="#">Производители</a>
+      <a href="#">Оплата и Доставка</a>
+      <a href="#">Монтаж и демонтаж</a>
+      <a href="#">Информация</a>
+      <a href="#">Частые вопросы</a>
+      <a href="#">Монтажным бригадам</a>
+      <a href="#">Партнёрство</a>
+      <a href="#">Оптовые поставки</a>
+   </nav>
+
+   <div class="mobile-menu__contact">
+      <a href='tel:+74952272379' class=''>+7 (495) 227-23-79</a>
+      <a href="mailto:welcome@ruspolik.ru">welcome@ruspolik.ru</a>
+      <a href="#">Заказать звонок</a>
+   </div>
+</div>
+
+   <div class='container'>
+      <div class="breadcrumbs">
+         <a href="#">Главная</a>
+         <a href="#">Каталог</a>
+         <a href="#">Поликарбонат</a>
+         <a href="#">Сотовый поликарбонат</a>
+         <a href="#">Polystrong 125-258 сотовый поликарбонат 4 мм, серый</a>
+      </div>
+   </div>
+
+   <section>
+      <div class='container'>
+         <div class="production-card">
+            <div class="row">
+               <div class="production-card__img">
+                  <div thumbsSlider class="swiper production-preview">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="swiper production-img">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="img/goods-card2.jpg" />
+                        </div>
+                     </div>
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                  </div>
+               </div>
+               <div class="production-discr">
+                  <div class="title3 production-discr__title">Polystrong 125-258 сотовый поликарбонат 4 мм, серый</div>
+
+                  <div class="row">
+                     <div class="production-discr__l">
+                        <div class="product-article">Артикул: <span>87354800</span></div>
+
+                        <dl class="product-characteristics">
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Наличие</dt>
+                              <dd class="product-characteristics__value">В наличии</dd>
+                           </div>
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Размер листа</dt>
+                              <dd class="product-characteristics__value">6 000 х 2 100</dd>
+                           </div>
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Цвет</dt>
+                              <dd class="product-characteristics__value">прозрачный</dd>
+                           </div>
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Цена за кв. метр</dt>
+                              <dd class="product-characteristics__value">228 ₽</dd>
+                           </div>
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Плотность листа</dt>
+                              <dd class="product-characteristics__value">0,5 кг / кв.м</dd>
+                           </div>
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Ценовой сегмент</dt>
+                              <dd class="product-characteristics__value">Эконом</dd>
+                           </div>
+                           <div class="product-characteristics__item">
+                              <dt class="product-characteristics__label">Торговая марка</dt>
+                              <dd class="product-characteristics__value">BEROLUX</dd>
+                           </div>
+                        </dl>
+                     </div>
+
+                     <div class="production-discr__r">
+                        <div class="production-discr__action">
+                           <div class="production-discr__info">
+                              <div class="product-rating">
+                                 <span class="product-rating__rating">4,8</span>
+                                 <svg>
+                                    <use xlink:href='img/sprite.svg#star'></use>
+                                 </svg>
+                              </div>
+                              <a href="#" class="review-link">5 отзывов</a>
+                           </div>
+                           <div class="production-discr__btns">
+                              <a href="#" class="btn-favorite"></a>
+                              <a href="#" class="btn-compare"></a>
+                           </div>
+
+                           <div class="product-price">
+                              <div class="product-price__old">400 ₽/м<sup>2</sup></div>
+                              <div class="product-price__current">355 ₽/м<sup>2</sup></div>
+                           </div>
+
+                           <div class="production-discr__btn">
+                              <button class="btn-main btn-main--small">В корзину</button>
+                           </div>
+
+                           <div class="production-discr__other">
+                              <label class="checkbox checkbox--small">
+                                 <input type="checkbox" class="checkbox__input">
+                                 <span class="checkbox__icon"></span>
+                                 <span class="checkbox__text">Нужен монтаж</span>
+                              </label>
+                              <label class="checkbox checkbox--small">
+                                 <input type="checkbox" class="checkbox__input">
+                                 <span class="checkbox__icon"></span>
+                                 <span class="checkbox__text">Нужен замер</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <div class="discription-nav">
+      <div class='container'>
+         <div class="discription-nav__inner scroll-spy">
+            <a href="#target1" class="scroll-link">Описание</a>
+            <a href="#target2" class="scroll-link">Характеристики</a>
+            <a href="#target3" class="scroll-link">Сопутствующие товары</a>
+            <a href="#target4" class="scroll-link">Похожие товары</a>
+            <a href="#target5" class="scroll-link">Отзывы</a>
+         </div>
+      </div>
+   </div>
+
+   <section class="discription-content">
+      <div class='container'>
+         <div class="row">
+            <div class="discription-content__l">
+               <div class="discription-content__item">
+                  <div class="title3 upercase mb25" id="target1">Описание</div>
+                  <p>Сотовый поликарбонат Polystrong с толщиной листов 4 мм – детище санкт-петербургской компании
+                     «Полимакс».</p>
+                  <p>Материал производится из прозрачных полимерных гранул и характеризуется высокой
+                     износоустойчивостью. Он рассчитан на применение в сельском хозяйстве (теплицы, парники),
+                     цветоводстве, садово-парковом искусстве, других смежных областях.</p>
+                  <p>Производитель дает гарантию на
+                     продукт сроком 14 лет.</p>
+
+                  <div class="title3 upercase mb25">Ключевые особенности</div>
+                  <p>Поликарбонатные листы отличаются хорошими эксплуатационными характеристиками:</p>
+                  <ul class="sq-list fz16 black">
+                     <li>Покрыт слоем защиты от УФ-излучений 40 микрон; </li>
+                     <li>Плотность поликарбоната 0,5 кг/м²; </li>
+                     <li>Не теряет своих свойств во время жары (до +125 С) и мороза (от -45 С);</li>
+                     <li>Демонстрируют высокую светопропускную способность (до 95%); </li>
+
+                     <li>Покрыт слоем защиты от УФ-излучений 40 микрон; </li>
+                     <li>Плотность поликарбоната 0,5 кг/м²; </li>
+                     <li>Не теряет своих свойств во время жары (до +125 С) и мороза (от -45 С);</li>
+                     <li>Демонстрируют высокую светопропускную способность (до 95%); </li>
+                  </ul>
+               </div>
+
+               <div class="discription-content__item">
+                  <div class="title3 upercase mb25" id="target2">Характеристики</div>
+                  <div class="characteristics-list">
+                     <div class="characteristics-list__item">
+                        <dt><span>Производитель</span></dt>
+                        <dd>POLYSTRONG</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Размеры листа</span></dt>
+                        <dd>2 100 х 6 000</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Толщина поликарбоната</span></dt>
+                        <dd>4 мм</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Коэффициент светопропускания</span></dt>
+                        <dd>95%</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Вес листа 6 м</span></dt>
+                        <dd>6,3 кг</dd>
+                     </div>
+
+                     <div class="characteristics-list__item">
+                        <dt><span>Производитель</span></dt>
+                        <dd>POLYSTRONG</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Размеры листа</span></dt>
+                        <dd>2 100 х 6 000</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Толщина поликарбоната</span></dt>
+                        <dd>4 мм</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Коэффициент светопропускания</span></dt>
+                        <dd>95%</dd>
+                     </div>
+                     <div class="characteristics-list__item">
+                        <dt><span>Вес листа 6 м</span></dt>
+                        <dd>6,3 кг</dd>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="discription-content__r">
+               <div class="sticky-box">
+                  <div class="delivery-box">
+                     <div class="title3">Доставка</div>
+                     <div class="delivery-box__list">
+                        <div class="delivery-box__item">
+                           <dt>Самовывоз со склада</dt>
+                           <dd>Москва</dd>
+                        </div>
+                        <div class="delivery-box__item">
+                           <dt>Доставка:</dt>
+                           <dd>
+                              <span>курьером от 500 ₽</span>
+                              <span>легковым авто от 1 000 ₽</span>
+                              <span>грузовым авто от 1 500 ₽</span>
+                           </dd>
+                        </div>
+                     </div>
+                     <a href="#" class="see-all">
+                        Посмотреть все тарифы
+                        <svg>
+                           <use xlink:href="img/sprite.svg#see-all"></use>
+                        </svg>
+                     </a>
+                     <div class="social-list">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                     </div>
+                  </div>
+
+                  <div class="calc-box">
+                     <div class="title3">Калькулятор</div>
+                     <p>Воспользуйтесь калькулятором для расчёта количества материала</p>
+                     <a href="#" class="btn-main">Рассчитать кол-во материала</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class='container'>
+         <div class="reviews">
+            <div class="title3 mb25" id="target5">Отзывы</div>
+            <div class="reviews__head">
+               <div class="reviews-rating">
+                  4,9
+                  <div class="rating-stars r4">
+                     <svg>
+                        <use xlink:href='img/sprite.svg#star'></use>
+                     </svg>
+                     <svg>
+                        <use xlink:href='img/sprite.svg#star'></use>
+                     </svg>
+                     <svg>
+                        <use xlink:href='img/sprite.svg#star'></use>
+                     </svg>
+                     <svg>
+                        <use xlink:href='img/sprite.svg#star'></use>
+                     </svg>
+                     <svg>
+                        <use xlink:href='img/sprite.svg#star'></use>
+                     </svg>
+                  </div>
+               </div>
+               <div class="btn-main show-feedback">Оставить отзыв</div>
+            </div>
+
+            <form class="form validate row feedback-form">
+               <div class="formgroup formgroup--w100 mb20">
+                  <span class="label label--reg grey">Оценка</span>
+                  <div class="rate-in"></div>
+               </div>
+               <div class="formgroup formgroup--w100 mb20">
+                  <span class="label label--reg grey">Достоинства</span>
+                  <input type="text" placeholder="" name="">
+               </div>
+               <div class="formgroup formgroup--w100 mb20">
+                  <span class="label label--reg grey">Недостатки</span>
+                  <input type="text" placeholder="" name="">
+               </div>
+               <div class="formgroup formgroup--w100 mb20">
+                  <span class="label label--reg grey">Ваш отзыв</span>
+                  <textarea rows="5"></textarea>
+               </div>
+               <div class="formgroup formgroup--w100">
+                  <button class="btn-main">Оставить отзыв</button>
+               </div>
+            </form>
+
+            <div class="reviews-list">
+               <div class="swiper-wrapper">
+                  <div class="review-card">
+                     <div class="review-card__name">Станислав</div>
+                     <div class="review-card__rating rating-stars r3">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                     </div>
+                     <div class="review-card__date">04 октября 2021 г.</div>
+                     <div class="review-card__view">
+                        <span>Достоинства: </span>Дешево, удобно монтировать, прочный.
+                     </div>
+                     <div class="review-card__view">
+                        <span>Недостатки: </span> Не обнаружил
+                     </div>
+                     <div class="review-card__text">
+                        <p>Взял для утепления балкона как замену Пеноплекса. Крепить
+                           удобно на клей-пену от того же пеноплекса, никаких грибков и прочего не применял, листы
+                           фиг оторвёшь потом, только клей резать. По прочности материала: я вешу 125 кг, когда делал
+                           пол ходил по нему как хотел, листы все держит не мнутся, только если прыгать. Никаких
+                           запахов нет, привезли все в запаянных упаковках, вид прекрасный. Взял для утепления балкона
+                           как замену Пеноплекса. Крепить
+                           удобно на клей-пену от того же пеноплекса, никаких грибков и прочего не применял, листы
+                           фиг оторвёшь потом, только клей резать. По прочности материала: я вешу 125 кг, когда делал
+                           пол ходил по нему как хотел, листы все держит не мнутся, только если прыгать. Никаких
+                           запахов нет, привезли все в запаянных упаковках, вид прекрасный.</p>
+                     </div>
+                  </div>
+                  <div class="review-card">
+                     <div class="review-card__name">Игорь</div>
+                     <div class="review-card__rating rating-stars r4">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                     </div>
+                     <div class="review-card__date">04 октября 2021 г.</div>
+                     <div class="review-card__view">
+                        <span>Достоинства: </span>Дешево, удобно монтировать, прочный.
+                     </div>
+                     <div class="review-card__view">
+                        <span>Недостатки: </span> Не обнаружил
+                     </div>
+                     <div class="review-card__text">
+                        <p>Телевизор нам очень нравится: дизайн очень стильный, сам телевизор очень тонкий как и рамка
+                           по
+                           экрану-ее совсем не видно, качество изображения, функционал-очень порадовал пульт ду, он как
+                           и
+                           телевизор очень стильно и современно смотрится есть голосовой поиск, операционка не тормозит!
+                           Очень быстрый отклик. Отличный телевизор</p>
+                     </div>
+                  </div>
+                  <div class="review-card">
+                     <div class="review-card__name">Станислав</div>
+                     <div class="review-card__rating rating-stars r3">
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                        <svg>
+                           <use xlink:href='img/sprite.svg#star'></use>
+                        </svg>
+                     </div>
+                     <div class="review-card__date">04 октября 2021 г.</div>
+                     <div class="review-card__view">
+                        <span>Достоинства: </span>Дешево, удобно монтировать, прочный.
+                     </div>
+                     <div class="review-card__view">
+                        <span>Недостатки: </span> Не обнаружил
+                     </div>
+                     <div class="review-card__text">
+                        <p>Отличный поликарбонат за свою цену. Прочный, легкий долговечный.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class='container'>
+         <div class="services">
+            <div class="services__head mb50">
+               <div class="title2 upercase" id="target3">С этим товаром приобретают услуги</div>
+            </div>
+            <div class="service-list">
+               <div class="swiper-wrapper">
+                  <div class="service-card service-card--add">
+                     <img src="img/service1.jpg" alt="img">
+                     <div class="service-card__inner">
+                        <div class="service-card__name">Фрезеровка и резка</div>
+                        <a href="#" class="btn-main btn-main--small">Выбрать</a>
+                     </div>
+                  </div>
+                  <div class="service-card service-card--add">
+                     <img src="img/service2.jpg" alt="img">
+                     <div class="service-card__inner">
+                        <div class="service-card__name">Доставка</div>
+                        <a href="#" class="btn-main btn-main--small">Выбрать</a>
+                     </div>
+                  </div>
+                  <div class="service-card service-card--add">
+                     <img src="img/service3.jpg" alt="img">
+                     <div class="service-card__inner">
+                        <div class="service-card__name">Монтаж</div>
+                        <a href="#" class="btn-main btn-main--small">Выбрать</a>
+                     </div>
+                  </div>
+                  <div class="service-card service-card--add">
+                     <img src="img/service4.jpg" alt="img">
+                     <div class="service-card__inner">
+                        <div class="service-card__name">Выезд мастера с образцами</div>
+                        <a href="#" class="btn-main btn-main--small">Выбрать</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class='container'>
+         <div class="bestsellers">
+            <div class="bestsellers__head">
+               <div class="title2 mb50 upercase" id="target4">Похожие товары</div>
+            </div>
+
+            <div class="bestsellers-list">
+               <div class="swiper-wrapper">
+                  <div class="goods-card">
+                     <div class="goods-card__img">
+                        <img src="img/goods-card1.jpg" alt="goods-card">
+                        <div class="goods-card__label product-label product-label--econom">Эконом</div>
+                     </div>
+                     <div class="goods-card__info">
+                        <div class="product-rating">
+                           <span class="product-rating__rating">4,8</span>
+                           <svg>
+                              <use xlink:href='img/sprite.svg#star'></use>
+                           </svg>
+                        </div>
+                        <a href="#" class="review-link">5 отзывов</a>
+                     </div>
+
+                     <div class="goods-card__detail">
+                        <div class="goods-card__article product-article">Артикул: <span>87354800</span></div>
+                        <div class="goods-card__name">Сотовый поликарбонат 6 мм 2100*6000 мм, бронзовый</div>
+                     </div>
+
+                     <div class="goods-card__action">
+                        <div class="goods-card__price product-price">
+                           <div class="product-price__current">355 ₽/м<sup>2</sup></div>
+                        </div>
+                        <button class="btn-main btn-main--small">В корзину</button>
+                     </div>
+                  </div>
+                  <div class="goods-card">
+                     <div class="goods-card__img">
+                        <img src="img/goods-card2.jpg" alt="goods-card">
+                        <div class="goods-card__label product-label product-label--standart">Стандарт</div>
+                     </div>
+                     <div class="goods-card__info">
+                        <div class="product-rating">
+                           <span class="product-rating__rating">4,8</span>
+                           <svg>
+                              <use xlink:href='img/sprite.svg#star'></use>
+                           </svg>
+                        </div>
+                        <a href="#" class="review-link">5 отзывов</a>
+                     </div>
+
+                     <div class="goods-card__detail">
+                        <div class="goods-card__article product-article">Артикул: <span>87354800</span></div>
+                        <div class="goods-card__name">Сотовый поликарбонат 6 мм 2100*6000 мм, бронзовый</div>
+                     </div>
+
+                     <div class="goods-card__action">
+                        <div class="goods-card__price product-price">
+                           <div class="product-price__old">7 525 ₽</div>
+                           <div class="product-price__current">355 ₽/м<sup>2</sup></div>
+                        </div>
+                        <button class="btn-main btn-main--small">В корзину</button>
+                     </div>
+                  </div>
+                  <div class="goods-card">
+                     <div class="goods-card__img">
+                        <img src="img/goods-card3.jpg" alt="goods-card">
+                        <div class="goods-card__label product-label product-label--premium">Премиум</div>
+                     </div>
+                     <div class="goods-card__info">
+                        <div class="product-rating">
+                           <span class="product-rating__rating">4,8</span>
+                           <svg>
+                              <use xlink:href='img/sprite.svg#star'></use>
+                           </svg>
+                        </div>
+                        <a href="#" class="review-link">5 отзывов</a>
+                     </div>
+
+                     <div class="goods-card__detail">
+                        <div class="goods-card__article product-article">Артикул: <span>87354800</span></div>
+                        <div class="goods-card__name">Сотовый поликарбонат 6 мм 2100*6000 мм, бронзовый</div>
+                     </div>
+
+                     <div class="goods-card__action">
+                        <div class="goods-card__price product-price">
+                           <div class="product-price__old">7 525 ₽</div>
+                           <div class="product-price__current">355 ₽/м<sup>2</sup></div>
+                        </div>
+                        <button class="btn-main btn-main--small">В корзину</button>
+                     </div>
+                  </div>
+                  <div class="goods-card">
+                     <div class="goods-card__img">
+                        <img src="img/goods-card1.jpg" alt="goods-card">
+                        <div class="goods-card__label product-label product-label--econom">Эконом</div>
+                     </div>
+                     <div class="goods-card__info">
+                        <div class="product-rating">
+                           <span class="product-rating__rating">4,8</span>
+                           <svg>
+                              <use xlink:href='img/sprite.svg#star'></use>
+                           </svg>
+                        </div>
+                        <a href="#" class="review-link">5 отзывов</a>
+                     </div>
+
+                     <div class="goods-card__detail">
+                        <div class="goods-card__article product-article">Артикул: <span>87354800</span></div>
+                        <div class="goods-card__name">Сотовый поликарбонат 6 мм 2100*6000 мм, бронзовый</div>
+                     </div>
+
+                     <div class="goods-card__action">
+                        <div class="goods-card__price product-price">
+                           <div class="product-price__old">7 525 ₽</div>
+                           <div class="product-price__current">355 ₽/м<sup>2</sup></div>
+                        </div>
+                        <button class="btn-main btn-main--small">В корзину</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+   <div class='container'>
+      <div class="footer-top">
+         <div class="footer-main">
+            <div class="footer-main__logo">
+               <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+
+            <div class="footer-main__pay">
+               <img src="img/visa.svg" alt="visa">
+               <img src="img/master.svg" alt="visa">
+               <img src="img/mir.svg" alt="visa">
+               <img src="img/express.jpg" alt="visa">
+            </div>
+
+            <ul class="footer-contact">
+               <li>
+                  <img src="img/phone.svg" alt="icon">
+                  <a href='tel:+77071234567' class=''>+7 (707) 123-45-67</a>
+               </li>
+               <li>
+                  <img src="img/email.svg" alt="icon">
+                  <a href='mailto:welcome@ruspolik.ru'>welcome@ruspolik.ru</a>
+               </li>
+            </ul>
+         </div>
+
+         <div class="footer-menu">
+            <ul>
+               <li>
+                  <a href="#">О нас</a>
+               </li>
+               <li>
+                  <a href="#">О компании</a>
+               </li>
+               <li>
+                  <a href="#">Каталог</a>
+               </li>
+               <li>
+                  <a href="#">Прайс-лист</a>
+               </li>
+               <li>
+                  <a href="#">Контакты</a>
+               </li>
+               <li>
+                  <a href="#">Производители</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">Полезное</a>
+               </li>
+               <li>
+                  <a href="#">Оплата и Доставка</a>
+               </li>
+               <li>
+                  <a href="#">Монтаж и демонтаж</a>
+               </li>
+               <li>
+                  <a href="#">Информация</a>
+               </li>
+               <li>
+                  <a href="#">Частые вопросы</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">Сотрудничество</a>
+               </li>
+               <li>
+                  <a href="#">Монтажным бригадам</a>
+               </li>
+               <li>
+                  <a href="#">Партнёрство</a>
+               </li>
+               <li>
+                  <a href="#">Оптовые поставки</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="footer-bot">
+         <div class="copy">© 2010–2021. ООО «РУСПОЛИК» Все права защищены</div>
+         <div class="footer-bot__link">
+            <a href="#">Пользовательское соглашение</a>
+         </div>
+         <div class="footer-bot__link">
+            <a href="#">Политика конфиденциальности</a>
+         </div>
+      </div>
+   </div>
+</footer>
+   
+
+   <script src="scripts/jquery/jquery-3.4.1.min.js"></script>
+   <script src="scripts/show-more/jquery.show-more.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="scripts/rateyo/jquery.rateyo.min.js"></script>
+   <script src="scripts/jquery.validate/jquery.validate.min.js"></script>
+   <script src="scripts/mask/mask.js"></script>
+
+   <script src="scripts/section-services.js"></script>
+   <script src="scripts/section-production-card.js"></script>
+   <script src="scripts/section-bestsellers.js"></script>
+
+   <script src="scripts/main.js"></script>
+</body>
+
+</html>

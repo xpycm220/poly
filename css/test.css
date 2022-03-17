@@ -1,0 +1,70 @@
+/* */
+
+/* */
+
+.test {
+  height: 2000px;
+}
+
+[class*=iui-],
+[class^=iui-] {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.iui-cloud-upload,
+.iui-close {
+  display: none !important;
+}
+
+.delete-image {
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/close-white.svg');
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  display: block !important;
+}
+
+.image-uploader {
+  border: 1px dashed #DBDBDB;
+  cursor: pointer;
+}
+
+.image-uploader .upload-text span {
+  font-size: 14px;
+  color: #929292;
+  text-align: center;
+  position: relative;
+  padding-left: 32px;
+}
+
+.image-uploader .upload-text span:before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/upload.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+
+@media screen and (max-width: 575px) {
+  .image-uploader .upload-text span {
+    padding-left: 0;
+  }
+
+  .image-uploader .upload-text span:before {
+    top: -50px;
+    margin-top: 0;
+    left: 50%;
+    margin-left: -12px;
+    width: 40px;
+    height: 40px;
+  }
+}

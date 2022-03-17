@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Анкета для поставщиков</title>
+
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/footer.css">
+
+   <link rel="stylesheet" href="css/application-suppliers.css">
+</head>
+
+<body>
+   <div class="application-main">
+      <div class='container'>
+         <a href="#" class="btn-back">
+            <img src="img/prev-btn.svg" alt="icon">
+            Вернуться назад
+         </a>
+         <div class="application-main__inner">
+            <div class="b-title application-main__title">Анкета поставщика продукции</div>
+            <div class="application-main__text">
+               <p>Укажите наиболее полную информацию о компании. Это поможет нам понять ваш региональный охват и
+                  преимущества. Заявка будет рассмотрена в течение 45 дней. Обратите внимание, что мы оставляем за собой
+                  право не предоставлять обратную связь с отказом.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <form class="application-form form validade">
+      <div class='container'>
+         <div class="section-inner">
+            <div class="application-form__item shadow">
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">ФИО запоняющего анкету</span>
+                  <input type="text" placeholder="Александр Евгеньевич Соколов" name="name">
+               </div>
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Ваша должность</span>
+                  <input type="text" placeholder="Менеджер отдела продаж" name="position">
+               </div>
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Ваш номер телефона</span>
+                  <input type="tel" placeholder="+7(___)___-__-__" name="tell">
+               </div>
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Адрес электронной почты</span>
+                  <input type="text" placeholder="Ваша почта" name="email">
+               </div>
+               <div class="person">
+                  <label class="checkbox checkbox--normal">
+                     <input type="checkbox" class="checkbox__input" autocomplete="off">
+                     <span class="checkbox__icon"></span>
+                     <span class="checkbox__text">Я согласен на обработку моих <a href="#"
+                           class="person__link">персональных данных.</a></span>
+                  </label>
+               </div>
+            </div>
+         </div>
+
+         <div class="section-inner">
+            <div class="application-form__item">
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">ИНН</span>
+                  <input type="text" placeholder="123456789012" name="position">
+               </div>
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Наименование организации</span>
+                  <input type="text" placeholder="ФОП «Артемьев»" name="position">
+               </div>
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Какие категории товаров вы хотите продавать?</span>
+                  <ul class="checkbox-list">
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Поликарбонат</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Комплектующие</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Теплицы и парники</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Для дачи и участка</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Оргстекло</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Баннерная ткань</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">ПЭТ листы</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Клей, химия, прочее</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">ПВХ</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Труби и стержни из оргстекла</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Технические пластики</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Стеклопластик ELYPLAST</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Самоклеящиеся пленки</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Полистирол</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Алюм. композитная панель</span>
+                        </label>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Уточните, что вы хотите продавать?</span>
+                  <ul class="checkbox-list">
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Сотовый поликарбонат</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Монолитный поликарбонат</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Профилированный монолитный поликарбонат</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="checkbox checkbox--normal">
+                           <input type="checkbox" class="checkbox__input">
+                           <span class="checkbox__icon"></span>
+                           <span class="checkbox__text grey">Комплектующие для поликарбоната</span>
+                        </label>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="formgroup formgroup--w100 mb30">
+                  <span class="label label--bold">Использует ли ваша организация основную систему налогообложения
+                     (ОСНО)?</span>
+
+                  <ul class="radio-col-list">
+                     <li>
+                        <label class="radio">
+                           <input type="radio" class="radio__input" name="amount">
+                           <span class="radio__icon"></span>
+                           <span class="radio__text fz14 grey">меньше 50</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="radio">
+                           <input type="radio" class="radio__input" name="amount">
+                           <span class="radio__icon"></span>
+                           <span class="radio__text fz14 grey">50-150</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="radio">
+                           <input type="radio" class="radio__input" name="amount">
+                           <span class="radio__icon"></span>
+                           <span class="radio__text fz14 grey">150-300</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="radio">
+                           <input type="radio" class="radio__input" name="amount">
+                           <span class="radio__icon"></span>
+                           <span class="radio__text fz14 grey">300-600</span>
+                        </label>
+                     </li>
+                     <li>
+                        <label class="radio">
+                           <input type="radio" class="radio__input" name="amount">
+                           <span class="radio__icon"></span>
+                           <span class="radio__text fz14 grey">больше 600</span>
+                        </label>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="form-btn text-center">
+                  <button class="btn-main">Подтвердить данные</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
+
+   <footer class="footer">
+   <div class='container'>
+      <div class="footer-top">
+         <div class="footer-main">
+            <div class="footer-main__logo">
+               <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+
+            <div class="footer-main__pay">
+               <img src="img/visa.svg" alt="visa">
+               <img src="img/master.svg" alt="visa">
+               <img src="img/mir.svg" alt="visa">
+               <img src="img/express.jpg" alt="visa">
+            </div>
+
+            <ul class="footer-contact">
+               <li>
+                  <img src="img/phone.svg" alt="icon">
+                  <a href='tel:+77071234567' class=''>+7 (707) 123-45-67</a>
+               </li>
+               <li>
+                  <img src="img/email.svg" alt="icon">
+                  <a href='mailto:welcome@ruspolik.ru'>welcome@ruspolik.ru</a>
+               </li>
+            </ul>
+         </div>
+
+         <div class="footer-menu">
+            <ul>
+               <li>
+                  <a href="#">О нас</a>
+               </li>
+               <li>
+                  <a href="#">О компании</a>
+               </li>
+               <li>
+                  <a href="#">Каталог</a>
+               </li>
+               <li>
+                  <a href="#">Прайс-лист</a>
+               </li>
+               <li>
+                  <a href="#">Контакты</a>
+               </li>
+               <li>
+                  <a href="#">Производители</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">Полезное</a>
+               </li>
+               <li>
+                  <a href="#">Оплата и Доставка</a>
+               </li>
+               <li>
+                  <a href="#">Монтаж и демонтаж</a>
+               </li>
+               <li>
+                  <a href="#">Информация</a>
+               </li>
+               <li>
+                  <a href="#">Частые вопросы</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">Сотрудничество</a>
+               </li>
+               <li>
+                  <a href="#">Монтажным бригадам</a>
+               </li>
+               <li>
+                  <a href="#">Партнёрство</a>
+               </li>
+               <li>
+                  <a href="#">Оптовые поставки</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="footer-bot">
+         <div class="copy">© 2010–2021. ООО «РУСПОЛИК» Все права защищены</div>
+         <div class="footer-bot__link">
+            <a href="#">Пользовательское соглашение</a>
+         </div>
+         <div class="footer-bot__link">
+            <a href="#">Политика конфиденциальности</a>
+         </div>
+      </div>
+   </div>
+</footer>
+   
+
+
+   <script src="scripts/jquery/jquery-3.4.1.min.js"></script>
+   <script src="scripts/show-more/jquery.show-more.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="scripts/niceSelect/jquery.nice-select.min.js"></script>
+   <script src="scripts/jquery.validate/jquery.validate.min.js"></script>
+   <script src="scripts/mask/mask.js"></script>
+
+   <script src="scripts/main.js"></script>
+</body>
+
+</html>

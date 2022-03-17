@@ -1,0 +1,79 @@
+.brands {
+  padding: 80px 0;
+  background: #F2F2F2;
+}
+
+.brands__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.brands .swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.brands .brands-list {
+  overflow: hidden;
+}
+
+.brands .brand-item {
+  height: 100px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 15px;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .brands .swiper-wrapper {
+    gap: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: initial;
+    -webkit-justify-content: initial;
+    justify-content: initial;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .brands .brands-list {
+    margin: -30px -15px;
+    padding: 30px 15px;
+    overflow: hidden;
+  }
+
+  .brands .brand-item {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .brands__head {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .brands .title2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
