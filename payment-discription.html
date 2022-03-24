@@ -7,10 +7,17 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Оплата</title>
 
+   <link rel="stylesheet" href="scripts/drag-drop-image-uploader/image-uploader.min.css">
+   <link rel="stylesheet" href="scripts/niceSelect/nice-select.css">
+   <link rel="stylesheet" href="scripts/magnific/magnific-popup.css">
+   <link rel="stylesheet" href="scripts/air-datepicker/air-datepicker.css">
+
    <link rel="stylesheet" href="css/styles.css">
    <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/footer.css">
    <link rel="stylesheet" href="css/sitemap.css">
+
+   <link rel="stylesheet" href="css/editor.css">
 </head>
 
 <body>
@@ -238,18 +245,18 @@
 
    <section>
       <div class='container'>
-         <div class="title2 mb25">Оплата</div>
-         <div class="section-item">
-            <div class="title3 mb20">Оплата с помощью банковской карты</div>
+         <div class="editor">
+            <h1>Оплата</h1>
+            <h2>Оплата с помощью банковской карты</h2>
             <p>Для выбора оплаты товара с помощью банковской карты на соответствующей странице сайта необходимо нажать
                кнопку «Оплата банковской картой».</p>
             <p>Оплата происходит через авторизационный сервер Процессингового центра банка с использованием Банковских
                кредитных карт следующих платёжных систем:</p>
-            <ul class="sq-list fz16 mb20">
+            <ul>
                <li>VISA International</li>
                <li>MasterCard World Wide</li>
             </ul>
-            <div class="title4 lower mb20">Описание процесса передачи данных</div>
+            <h3>Описание процесса передачи данных</h3>
             <p>Для оплаты покупки вы будете перенаправлены на платёжный шлюз ПАО «СберБанк России» для ввода реквизитов
                вашей карты. Пожалуйста, приготовьте Вашу пластиковую карту заранее. Соединение с платёжным шлюзом
                и передача информации осуществляется в защищённом режиме с использованием протокола шифрования SSL.</p>
@@ -262,85 +269,87 @@
                за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам
                осуществляется в строгом соответствии с требованиями платёжных систем Visa Int. и Mastercard Europe Sprl.
             </p>
-            <div class="title4 lower mb20">При аннулировании заказа</div>
+            <h3>Описание процессa оплаты</h3>
+            <p>При выборе формы оплаты с помощью пластиковой карты проведение платежа по заказу производится
+               непосредственно после его оформления.
+               После завершения оформления заказа в нашем магазине, вы должны будете нажать на кнопку «Оплата банковской
+               картой», при этом система переключит вас на страницу авторизационного сервера, где вам будет предложено
+               ввести данные пластиковой карты, инициировать её авторизацию, после чего вернуться в наш магазин кнопкой
+               «Вернуться в магазин». После того, как вы возвращаетесь в наш магазин, система уведомит вас о результатах
+               авторизации. В случае подтверждения авторизации ваш заказ будет автоматически выполняться в соответствии
+               с заданными вами условиями. В случае отказа в авторизации карты вы сможете повторить процедуру оплаты.
+            </p>
+            <h3>При аннулировании заказа</h3>
             <p>При аннулировании позиций из оплаченного заказа (или при аннулировании заказа целиком) вы можете заказать
                другой товар на эту сумму, либо вернуть всю сумму на карту предварительно написав письмо на электронную
                почту</p>
-         </div>
-         <div class="section-item">
-            <div class="title3 mb20">Доставка</div>
+
+            <h2>Доставка</h2>
             <p>Доставка производится на 1–2-й день с момента зачисления денег на наш счёт. Товар доставляется в рабочие
                дни с 10–00 до 18–00.
                При получении товара у представителя юридического лица должна быть доверенность с печатью
                от компании-плательщика или сама печать.
                Частные покупатели для получения товара должны предъявить квитанцию с отметкой СберБанка об оплате
                или паспорт владельца карты, если оплата произведена по банковской карте.</p>
-            <p></p>
-            <p></p>
-         </div>
-         <div class="section-item">
-            <div class="title3 mb20">Гарантийные обязательства</div>
+            <h2>Гарантийные обязательства</h2>
             <p>Гарантийное обслуживание оборудования в течение всего гарантийного срока осуществляется авторизованными
                сервисными центрами соответствующих фирм-изготовителей. Адреса сервисных центров вы можете найти
                на соответствующей странице нашего сайта. Обязательным условием выполнения гарантийного ремонта является
                наличие гарантийного талона, в котором должны бать заполнены графы с наименованием товара, гарантийным
                сроком, датой продажи и серийным номером устройства.</p>
             <p>Оплата банковскими картами осуществляется после проверки заказа менеджером интернет-магазина.</p>
-         </div>
-         <div class="section-item">
             <div class="row">
-               <div class="col-sm-6 mb20">
-                  <div class="title4 mb20">Оплата по банковским картам VISA</div>
+               <div class="col-sm-6">
+                  <h3>Оплата по банковским картам VISA</h3>
                   <p>К оплате принимаются все виды платёжных карточек Visa, за исключением Visa Electron. В большинстве
                      случаев карта Visa Electron не применима для оплаты через интернет, за исключением карт, выпущенных
                      отдельными банками. О возможности оплаты картой Visa Electron вам нужно выяснять у банка-эмитента
-                     вашей карты.</p>
+                     вашей
+                     карты.</p>
                </div>
-               <div class="col-sm-6 mb20">
-                  <div class="title4 mb20">Оплата по кредитным картам MasterCard</div>
+               <div class="col-sm-6">
+                  <h3>Оплата по кредитным картам MasterCard</h3>
                   <p>На сайте к оплате принимаются все виды MasterCard.</p>
                </div>
             </div>
+
             <p>Что нужно знать:</p>
-            <ol class="num-list fz16 mb20">
+
+            <ol>
                <li>номер вашей кредитной карты;</li>
                <li>cрок окончания действия вашей кредитной карты, месяц/год;</li>
-               <li>CVV код для карт Visa / CVC код для Master Card: 3 последние цифры на полосе для подписи на обороте
-                  карты.</li>
+               <li>CVV код для карт Visa / CVC код для Master Card: 3 последние цифры на полосе для подписи на
+                  обороте карты.</li>
             </ol>
             <p>Если на вашей карте код CVC / CVV отсутствует, то, возможно, карта не пригодна для CNP транзакций (т.е.
                таких транзакций, при которых сама карта не присутствует, а используются её реквизиты), и вам следует
                обратиться в банк для получения подробной информации.</p>
-            <div class="title3 mb20">Оплата заказов через СБЕРБАНК</div>
+
+            <h3>Оплата заказов через СБЕРБАНК</h3>
             <p>Оплата заказов через СБЕРБАНК осуществляется после проверки заказа менеджером интернет-магазина. Чтобы
                оплатить заказ, необходимо распечатать квитанцию об оплате с сайта магазина. Предупреждаем Вас, что
                СБЕРБАНК взымает комиссию за услугу оплаты.</p>
-            <div class="title3 mb20">Оплата заказов банковскими картами СБЕРБАНК</div>
-            <p>Как оплатить банковской картой. <br>
+            <h3>Оплата заказов банковскими картами СБЕРБАНК</h3>
+            <p>Как оплатить банковской картой.
                По кнопке «Перейти на сайт платёжной системы СберБанк» вы будете перенаправлены на платёжный шлюз
                ПАО «СберБанк России», где вы сможете указать реквизиты вашей банковской карты*. Соединение с платёжным
                шлюзом и передача параметров вашей пластиковой карты осуществляется в защищённом режиме с использованием
                128-битного протокола шифрования SSL.</p>
-            <p> Если Банк-Эмитент вашей пластиковой карты поддерживает технологию безопасного проведения
+            <p>Если Банк-Эмитент вашей пластиковой карты поддерживает технологию безопасного проведения
                интернет-платежейVerified By VisaилиMastercard SecureCode, будьте готовы указать специальный пароль,
                необходимый для успешной оплаты. Способы и возможность получения пароля для совершения интернет-платежа
                вы можете уточнить в банке, выпустившем Вашу карту.
                При выборе формы оплаты с помощью банковской карты проведение платежа по заказу производится
-               непосредственно
-               после подтверждения его менеджером. После подтверждения заказа менеджером, вы должны будете зайти
-               в личный
-               кабинет вашего заказа (по 20-значному уникальному номеру заказа, полученному при оформлении) и нажать
-               на кнопку «Оплата банковской картой», при этом система переведёт вас на страницу авторизационного сервера
-               СберБанка, где вам будет предложено ввести данные пластиковой карты, инициировать её авторизацию,
-               после чего
-               вы сможете вернуться в наш магазин кликом по кнопке «Вернуться в магазин». После возвращения
-               в наш магазин,
-               система уведомит вас о результатах авторизации.
+               непосредственно после подтверждения его менеджером. После подтверждения заказа менеджером, вы должны
+               будете зайти в личный кабинет вашего заказа (по 20-значному уникальному номеру заказа, полученному
+               при оформлении) и нажать на кнопку «Оплата банковской картой», при этом система переведёт вас на страницу
+               авторизационного сервера СберБанка, где вам будет предложено ввести данные пластиковой карты,
+               инициировать её авторизацию, после чего вы сможете вернуться в наш магазин кликом по кнопке «Вернуться
+               в магазин». После возвращения в наш магазин, система уведомит вас о результатах авторизации.
                До получения успешного подтверждения платежа ваш заказ будет находиться в режиме ожидания, после пяти
-               дней
-               ожидания получения оплаты заказ будет автоматически аннулирован. После успешного подтверждения платежа
-               ваш заказ будет переведён в режим доставки по указанному адресу. В случае отказа в авторизации карты
-               вы сможете повторить процедуру оплаты.
+               дней ожидания получения оплаты заказ будет автоматически аннулирован. После успешного подтверждения
+               платежа ваш заказ будет переведён в режим доставки по указанному адресу. В случае отказа в авторизации
+               карты вы сможете повторить процедуру оплаты.
                На оформление платежа СберБанком выделяется 20 минут, поэтому, пожалуйста, приготовьте Вашу пластиковую
                карту заранее. Если вам не хватит выделенного на оплату времени или в случае отказа в авторизации карты
                вы сможете повторить процедуру оплаты.</p>
@@ -348,21 +357,16 @@
                информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных
                законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии
                с требованиями платёжных системVisa Int.иMastercard Europe Sprl.</p>
-         </div>
-         <div class="section-item">
-            <div class="title3 mb20">Отмена заказа</div>
+            <h2>Отмена заказа</h2>
             <p>При удалении товаров из оплаченного заказа или при аннулировании заказа целиком вы можете заказать другой
                товар на такую же сумму, либо полностью вернуть всю сумму на карту с помощью вашего менеджера.
                Доставка и выдача заказа, оплаченного пластиковой картой.
                Доставка или выдача при самовывозе товара, оплаченного пластиковой картой, осуществляется
                со дня зачисления денег на наш счёт.</p>
             <p>Частные покупатели для получения товара должны предъявить паспорт владельца пластиковой карты, по которой
-               производилась оплата заказа.
-               Представитель юридического лица должен иметь доверенность с печатью от компании-плательщика или саму
-               печать.</p>
-         </div>
-         <div class="section-item">
-            <div class="title3 mb20">Возврат товара, денежных средств</div>
+               производилась оплата заказа. Представитель юридического лица должен иметь доверенность с печатью
+               от компании-плательщика или саму печать.</p>
+            <h3>Возврат товара, денежных средств</h3>
             <p>Продавец обязан передать Покупателю Товары, которые полностью соответствуют его Заказу, качество которых
                соответствует информации, представленной Покупателю на сайте, а также информации, доведённой до его
                сведения при передаче Товаров (на этикетке или вкладыше, прикреплённых к Товарам или их упаковке, либо
@@ -487,10 +491,432 @@
       </div>
    </div>
 </footer>
-   
+   <div class="popup calc-popup zoom-anim-dialog mfp-hide" id="calc-popup">
+   <div class="title3 upercase mb30">Калькулятор навесов</div>
+   <form class="form validate row">
+      <div class="calc-popup__l">
+         <div class="formgroup formgroup--row">
+            <span class="label label--reg grey">Длина навеса (в метрах)</span>
+            <input type="number" placeholder="0" name="">
+         </div>
+         <div class="formgroup formgroup--row">
+            <span class="label label--reg grey">Ширина навеса (в метрах)</span>
+            <input type="number" placeholder="0" name="">
+         </div>
+         <div class="formgroup formgroup--row mb30">
+            <span class="label label--reg grey">Высота навеса (в метрах)</span>
+            <input type="number" placeholder="0" name="">
+         </div>
+
+         <div class="formgroup mb30">
+            <span class="label label--reg grey">Тип крыши</span>
+            <ul class="calc-type">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
+         </div>
+
+         <div class="formgroup">
+            <span class="label label--reg grey">Выберите поликарбонат</span>
+            <select class="main-select">
+               <option>1Сотовый поликарбонат 8 мм</option>
+               <option>2Сотовый поликарбонат 8 мм</option>
+               <option>3Сотовый поликарбонат 8 мм</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Цвет поликарбоната</span>
+            <select class="main-select">
+               <option>Прозрачный1</option>
+               <option>Прозрачный2</option>
+               <option>Прозрачный3</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Размер столбов</span>
+            <select class="main-select">
+               <option>60 х 60</option>
+               <option>80 х 80</option>
+               <option>100 х 100</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Окраска каркаса</span>
+            <select class="main-select">
+               <option>Грунт1</option>
+               <option>Грунт2</option>
+               <option>Грунт3</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Вывод генератора (если нет электричества)</span>
+            <label class="radio">
+               <input type="radio" class="radio__input" name="radio">
+               <span class="radio__icon"></span>
+               <span class="radio__text fz16">Да</span>
+            </label>
+            <label class="radio">
+               <input type="radio" class="radio__input" name="radio">
+               <span class="radio__icon"></span>
+               <span class="radio__text fz16">Нет</span>
+            </label>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Размер столбов</span>
+            <select class="main-select">
+               <option>по Москве1</option>
+               <option>по Москве2</option>
+               <option>по Москве3</option>
+            </select>
+         </div>
+      </div>
+      <div class="calc-popup__r">
+         <img src="img/calc.jpg" alt="calc" class="calc-popup__img mb30">
+         <div class="calc-info">
+            <div class="calc-info__item">
+               <div class="calc-info__text">Стоимость материалов</div>
+               <div class="calc-info__price">47 500 ₽ </div>
+            </div>
+            <div class="calc-info__item">
+               <div class="calc-info__text">Стоимость доставки и установки</div>
+               <div class="calc-info__price">17 500 ₽ </div>
+            </div>
+            <div class="calc-info__item">
+               <div class="calc-info__title">Итого</div>
+               <div class="calc-info__summ">65 000 ₽ </div>
+            </div>
+         </div>
+         <div class="formgroup mb30">
+            <button class="btn-main">Заказать звонок</button>
+         </div>
+         <div class="formgroup mb30">
+            <button class="btn-border">Распечатать смету</button>
+         </div>
+      </div>
+   </form>
+</div>
+
+<div class="popup callback-popup zoom-anim-dialog mfp-hide" id="callback-popup">
+   <div class="title3 upercase mb30">Заказать звонок</div>
+   <form class="form validate row">
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Имя</span>
+         <input type="text" placeholder="Александр" name="name">
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Телефон</span>
+         <input type="tel" placeholder="+7 (707) 123-45-67" name="tell">
+      </div>
+      <div class="person mb30">Нажимая на кнопку «Заказать» я даю согласие на обработку персональных данных.</a>
+      </div>
+      <div class="formgroup formgroup--w100 mb0">
+         <button class="btn-main w100">Заказать звонок</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup installation-popup zoom-anim-dialog mfp-hide" id="installation-popup">
+   <div class="title3 upercase mb30">Заказ монтажа</div>
+   <form class="form validate row">
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Имя</span>
+         <input type="text" placeholder="Александр" name="name">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Телефон</span>
+         <input type="tel" placeholder="+7 (707) 123-45-67" name="tell">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Электронная почта</span>
+         <input type="text" placeholder="email@example.com" name="email">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Адрес объекта</span>
+         <input type="text" placeholder="ул. Иванова д.7" name="name">
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Адрес объекта</span>
+         <div class="input-images"></div>
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Ваше сообщение</span>
+         <textarea rows="5" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <div class="person mb30">Нажимая на кнопку «Заказать монтаж» я даю согласие на обработку персональных данных.
+      </div>
+      <div class="formgroup formgroup--w100">
+         <button class="btn-main">Заказать монтаж</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup sample-popup zoom-anim-dialog mfp-hide" id="sample-popup">
+   <div class="title3 upercase mb30">Вызов мастера с образцами</div>
+   <form class="form validate row">
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Имя</span>
+         <input type="text" placeholder="Александр" name="name">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Телефон</span>
+         <input type="tel" placeholder="+7 (707) 123-45-67" name="tell">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Электронная почта</span>
+         <input type="text" placeholder="email@example.com" name="email">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Адрес объекта</span>
+         <input type="text" placeholder="ул. Иванова д.7" name="name">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Дата</span>
+         <input type='text' id="picker" />
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Фото объекта (не менее 3 штук)</span>
+         <div class="input-images"></div>
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Сообщение</span>
+         <textarea rows="5" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <div class="person mb30">Нажимая на кнопку «Вызвать мастера» я даю согласие на обработку персональных данных.
+      </div>
+      <div class="formgroup formgroup--w100">
+         <button class="btn-main">Заказать монтаж</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup pickup-popup zoom-anim-dialog mfp-hide" id="pickup-popup">
+   <div class="title3 upercase mb30">Вызов мастера с образцами</div>
+   <div class="row">
+      <div class="pickup-popup__l">
+         <div class="title4">Информация о работе склада</div>
+         <div class="contact">
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/location.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Адрес</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">г. Москва, ул. Пушкина, стр. 1, д.27, оф. 1</div>
+               </div>
+            </div>
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/clock.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Время работы</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">Пн-Пт<br>Сб-Вс</div>
+                  <div class="contact-inner__text fz16">09:00–18:0<br>выходной</div>
+               </div>
+            </div>
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/phone.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Телефон</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">+7 (499) 380-69-87</div>
+               </div>
+            </div>
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/email.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Почта</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">zakaz@ruspolik.ru</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="pickup-popup__r">
+         <div class="pickup-popup__map">
+            <iframe
+               src="https://yandex.ru/map-widget/v1/?um=constructor%3A691656131f6fd234f234e7647d0ca355b01a1a275a81ca8124cac9fda4525e8e&amp;source=constructor"
+               frameborder="0"></iframe>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="popup size-popup zoom-anim-dialog mfp-hide" id="size-card-popup">
+   <div class="title3 upercase mb30">Заказ по своим размерам</div>
+   <form class="form validate row">
+      <div class="size-popup__l">
+         <div class="formgroup">
+            <span class="label label--reg grey">Тип поликарбоната</span>
+            <select class="main-select">
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+            </select>
+         </div>
+         <div class="formgroup formgroup--question">
+            <img src="img/question.svg" alt="icon">
+            <span class="label label--reg grey">Артикул</span>
+            <input type="text" placeholder="POLYSTRONG 125-258 4 мм" name="">
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Толщина поликарбоната</span>
+            <select class="main-select">
+               <option>8 мм</option>
+               <option>8 мм</option>
+               <option>8 мм</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Цвет</span>
+            <select class="main-select">
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+            </select>
+         </div>
+         <div class="formgroup formgroup--size">
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Ширина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Длина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Количество</span>
+               <input type="number" placeholder="0">
+            </div>
+         </div>
+         <div class="add-size">
+            <svg>
+               <use xlink:href='img/sprite.svg#plus'></use>
+            </svg>
+            Добавить размер
+         </div>
+      </div>
+      <div class="size-popup__r">
+         <div class="size-popup__img"></div>
+         <img src="img/size.jpg" alt="img" class="size-popup__img mb20">
+         <p class="fz14">При заказе резки или по исвоим размерам обратите внимание на рисунок расположения соты.
+            Заполняйте размер по ширине и длине правильно!</p>
+         <div class="size-popup__article">
+            <span>Артикул:</span>
+            POLYSTRONG 125-258 4 мм
+         </div>
+         <div class="size-popup__name mb30">Polystrong 125-258 сотовый поликарбонат 4 мм, серый</div>
+         <button class="btn-main">Отправить заявку</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup size-popup zoom-anim-dialog mfp-hide" id="size-category-popup">
+   <div class="title3 upercase mb30">Заказ по своим размерам</div>
+   <form class="form validate row">
+      <div class="size-popup__l">
+         <div class="formgroup">
+            <span class="label label--reg grey">Тип поликарбоната</span>
+            <select class="main-select">
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Производитель</span>
+            <select class="main-select">
+               <option>BORREX</option>
+               <option>BORREX</option>
+               <option>BORREX</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Толщина поликарбоната</span>
+            <select class="main-select">
+               <option>8 мм</option>
+               <option>8 мм</option>
+               <option>8 мм</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Цвет</span>
+            <select class="main-select">
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+            </select>
+         </div>
+         <div class="formgroup formgroup--size">
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Ширина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Длина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Количество</span>
+               <input type="number" placeholder="0">
+            </div>
+         </div>
+         <div class="add-size">
+            <svg>
+               <use xlink:href='img/sprite.svg#plus'></use>
+            </svg>
+            Добавить размер
+         </div>
+      </div>
+      <div class="size-popup__r">
+         <div class="size-popup__img"></div>
+         <img src="img/size.jpg" alt="img" class="size-popup__img mb20">
+         <p class="fz14">При заказе резки или по исвоим размерам обратите внимание на рисунок расположения соты.
+            Заполняйте размер по ширине и длине правильно!</p>
+         <div class="size-popup__article">
+            <span>Артикул:</span>
+            POLYSTRONG 125-258 4 мм
+         </div>
+         <div class="size-popup__name mb30">Polystrong 125-258 сотовый поликарбонат 4 мм, серый</div>
+         <button class="btn-main">Отправить заявку</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup send-popup zoom-anim-dialog mfp-hide" id="send-popup">
+   <div class="title3 send-popup__title upercase mb25">Готово!</div>
+   <p class="send-popup__text">Спасибо за Ваше обращение, заявка отправлена. В ближайшее время мы с Вами свяжемся и
+      уточним все детали, которые
+   </p>
+</div>
 
 
    <script src="scripts/jquery/jquery-3.4.1.min.js"></script>
+   <script src="scripts/magnific/jquery.magnific-popup.min.js"></script>
+   <script src="scripts/show-more/jquery.show-more.js"></script>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="scripts/niceSelect/jquery.nice-select.min.js"></script>
+   <script src="scripts/jquery.validate/jquery.validate.min.js"></script>
+   <script src="scripts/drag-drop-image-uploader/image-uploader.min.js"></script>
+   <script src="scripts/air-datepicker/air-datepicker.js"></script>
+   <script src="scripts/mask/mask.js"></script>
    <script src="scripts/main.js"></script>
 </body>
 

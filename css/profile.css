@@ -1060,6 +1060,17 @@
   width: 100%;
 }
 
+/* Данные организации редактор */
+
+.edit-company__title {
+  font-size: 14px;
+  color: #000;
+}
+
+.edit-company__btns .btn-main {
+  margin-right: 30px;
+}
+
 @media (min-width: 991px) {
   .goods-card {
     -webkit-transition: 0.3s box-shadow;

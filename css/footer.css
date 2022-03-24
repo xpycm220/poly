@@ -1,6 +1,7 @@
 .footer {
   background-color: #272727;
   padding-top: 25px;
+  margin-top: 55px;
 }
 
 .footer-top {
@@ -128,6 +129,10 @@
 }
 
 @media screen and (max-width: 991px) {
+  .footer {
+    margin-top: 30px;
+  }
+
   .footer-top {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;

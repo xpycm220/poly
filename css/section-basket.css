@@ -309,14 +309,13 @@
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
+  width: calc(50% - 30px);
   min-height: 280px;
 }
 
-.delivery-method .pickup-address__map img {
-  width: 100%;
+.delivery-method .pickup-address__map iframe {
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 100%;
 }
 
 .delivery-method .address-list li {

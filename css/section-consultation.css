@@ -47,6 +47,13 @@
   margin-left: 15px;
   margin-right: 15px;
   width: calc(37.5% - 30px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   padding-left: 35px;
 }
 
@@ -126,10 +133,12 @@
 
 .consultation-contact__map {
   width: 100%;
+  height: 100%;
 }
 
-.consultation-contact__map img {
+.consultation-contact__map iframe {
   width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -163,11 +172,13 @@
     padding-left: 0;
     padding-top: 30px;
   }
-}
 
-@media screen and (max-width: 575px) {
-  .consultation-request__subtitle {
-    font-size: 14px;
+  .consultation-contact .contact-list {
+    margin-bottom: 25px;
+  }
+
+  .consultation-contact .contact-list li {
+    margin-bottom: 20px;
   }
 
   .consultation-contact .contact-list li {
@@ -177,6 +188,16 @@
   .consultation-contact .contact-list li:before {
     width: 30px;
     height: 30px;
+  }
+
+  .consultation-contact__map {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .consultation-request__subtitle {
+    font-size: 14px;
   }
 
   .consultation-contact .contact-list li span,

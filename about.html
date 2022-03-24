@@ -8,8 +8,11 @@
    <title>О компании</title>
 
 
-   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
    <link rel="stylesheet" href="scripts/fancybox/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="scripts/drag-drop-image-uploader/image-uploader.min.css">
+   <link rel="stylesheet" href="scripts/niceSelect/nice-select.css">
+   <link rel="stylesheet" href="scripts/magnific/magnific-popup.css">
+   <link rel="stylesheet" href="scripts/air-datepicker/air-datepicker.css">
 
    <link rel="stylesheet" href="css/styles.css">
    <link rel="stylesheet" href="css/header.css">
@@ -429,15 +432,431 @@
       </div>
    </div>
 </footer>
-   
+   <div class="popup calc-popup zoom-anim-dialog mfp-hide" id="calc-popup">
+   <div class="title3 upercase mb30">Калькулятор навесов</div>
+   <form class="form validate row">
+      <div class="calc-popup__l">
+         <div class="formgroup formgroup--row">
+            <span class="label label--reg grey">Длина навеса (в метрах)</span>
+            <input type="number" placeholder="0" name="">
+         </div>
+         <div class="formgroup formgroup--row">
+            <span class="label label--reg grey">Ширина навеса (в метрах)</span>
+            <input type="number" placeholder="0" name="">
+         </div>
+         <div class="formgroup formgroup--row mb30">
+            <span class="label label--reg grey">Высота навеса (в метрах)</span>
+            <input type="number" placeholder="0" name="">
+         </div>
+
+         <div class="formgroup mb30">
+            <span class="label label--reg grey">Тип крыши</span>
+            <ul class="calc-type">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
+         </div>
+
+         <div class="formgroup">
+            <span class="label label--reg grey">Выберите поликарбонат</span>
+            <select class="main-select">
+               <option>1Сотовый поликарбонат 8 мм</option>
+               <option>2Сотовый поликарбонат 8 мм</option>
+               <option>3Сотовый поликарбонат 8 мм</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Цвет поликарбоната</span>
+            <select class="main-select">
+               <option>Прозрачный1</option>
+               <option>Прозрачный2</option>
+               <option>Прозрачный3</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Размер столбов</span>
+            <select class="main-select">
+               <option>60 х 60</option>
+               <option>80 х 80</option>
+               <option>100 х 100</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Окраска каркаса</span>
+            <select class="main-select">
+               <option>Грунт1</option>
+               <option>Грунт2</option>
+               <option>Грунт3</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Вывод генератора (если нет электричества)</span>
+            <label class="radio">
+               <input type="radio" class="radio__input" name="radio">
+               <span class="radio__icon"></span>
+               <span class="radio__text fz16">Да</span>
+            </label>
+            <label class="radio">
+               <input type="radio" class="radio__input" name="radio">
+               <span class="radio__icon"></span>
+               <span class="radio__text fz16">Нет</span>
+            </label>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Размер столбов</span>
+            <select class="main-select">
+               <option>по Москве1</option>
+               <option>по Москве2</option>
+               <option>по Москве3</option>
+            </select>
+         </div>
+      </div>
+      <div class="calc-popup__r">
+         <img src="img/calc.jpg" alt="calc" class="calc-popup__img mb30">
+         <div class="calc-info">
+            <div class="calc-info__item">
+               <div class="calc-info__text">Стоимость материалов</div>
+               <div class="calc-info__price">47 500 ₽ </div>
+            </div>
+            <div class="calc-info__item">
+               <div class="calc-info__text">Стоимость доставки и установки</div>
+               <div class="calc-info__price">17 500 ₽ </div>
+            </div>
+            <div class="calc-info__item">
+               <div class="calc-info__title">Итого</div>
+               <div class="calc-info__summ">65 000 ₽ </div>
+            </div>
+         </div>
+         <div class="formgroup mb30">
+            <button class="btn-main">Заказать звонок</button>
+         </div>
+         <div class="formgroup mb30">
+            <button class="btn-border">Распечатать смету</button>
+         </div>
+      </div>
+   </form>
+</div>
+
+<div class="popup callback-popup zoom-anim-dialog mfp-hide" id="callback-popup">
+   <div class="title3 upercase mb30">Заказать звонок</div>
+   <form class="form validate row">
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Имя</span>
+         <input type="text" placeholder="Александр" name="name">
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Телефон</span>
+         <input type="tel" placeholder="+7 (707) 123-45-67" name="tell">
+      </div>
+      <div class="person mb30">Нажимая на кнопку «Заказать» я даю согласие на обработку персональных данных.</a>
+      </div>
+      <div class="formgroup formgroup--w100 mb0">
+         <button class="btn-main w100">Заказать звонок</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup installation-popup zoom-anim-dialog mfp-hide" id="installation-popup">
+   <div class="title3 upercase mb30">Заказ монтажа</div>
+   <form class="form validate row">
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Имя</span>
+         <input type="text" placeholder="Александр" name="name">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Телефон</span>
+         <input type="tel" placeholder="+7 (707) 123-45-67" name="tell">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Электронная почта</span>
+         <input type="text" placeholder="email@example.com" name="email">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Адрес объекта</span>
+         <input type="text" placeholder="ул. Иванова д.7" name="name">
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Адрес объекта</span>
+         <div class="input-images"></div>
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Ваше сообщение</span>
+         <textarea rows="5" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <div class="person mb30">Нажимая на кнопку «Заказать монтаж» я даю согласие на обработку персональных данных.
+      </div>
+      <div class="formgroup formgroup--w100">
+         <button class="btn-main">Заказать монтаж</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup sample-popup zoom-anim-dialog mfp-hide" id="sample-popup">
+   <div class="title3 upercase mb30">Вызов мастера с образцами</div>
+   <form class="form validate row">
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Имя</span>
+         <input type="text" placeholder="Александр" name="name">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Телефон</span>
+         <input type="tel" placeholder="+7 (707) 123-45-67" name="tell">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Электронная почта</span>
+         <input type="text" placeholder="email@example.com" name="email">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Адрес объекта</span>
+         <input type="text" placeholder="ул. Иванова д.7" name="name">
+      </div>
+      <div class="formgroup formgroup--w50 mb20">
+         <span class="label label--reg grey">Дата</span>
+         <input type='text' id="picker" />
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Фото объекта (не менее 3 штук)</span>
+         <div class="input-images"></div>
+      </div>
+      <div class="formgroup formgroup--w100 mb20">
+         <span class="label label--reg grey">Сообщение</span>
+         <textarea rows="5" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <div class="person mb30">Нажимая на кнопку «Вызвать мастера» я даю согласие на обработку персональных данных.
+      </div>
+      <div class="formgroup formgroup--w100">
+         <button class="btn-main">Заказать монтаж</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup pickup-popup zoom-anim-dialog mfp-hide" id="pickup-popup">
+   <div class="title3 upercase mb30">Вызов мастера с образцами</div>
+   <div class="row">
+      <div class="pickup-popup__l">
+         <div class="title4">Информация о работе склада</div>
+         <div class="contact">
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/location.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Адрес</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">г. Москва, ул. Пушкина, стр. 1, д.27, оф. 1</div>
+               </div>
+            </div>
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/clock.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Время работы</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">Пн-Пт<br>Сб-Вс</div>
+                  <div class="contact-inner__text fz16">09:00–18:0<br>выходной</div>
+               </div>
+            </div>
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/phone.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Телефон</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">+7 (499) 380-69-87</div>
+               </div>
+            </div>
+            <div class="contact__item">
+               <div class="contact-label">
+                  <div class="contact-label__icon">
+                     <img src="img/email.svg" alt="icon">
+                  </div>
+                  <div class="contact-label__text fz14 grey">Почта</div>
+               </div>
+               <div class="contact-inner">
+                  <div class="contact-inner__text fz16">zakaz@ruspolik.ru</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="pickup-popup__r">
+         <div class="pickup-popup__map">
+            <iframe
+               src="https://yandex.ru/map-widget/v1/?um=constructor%3A691656131f6fd234f234e7647d0ca355b01a1a275a81ca8124cac9fda4525e8e&amp;source=constructor"
+               frameborder="0"></iframe>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="popup size-popup zoom-anim-dialog mfp-hide" id="size-card-popup">
+   <div class="title3 upercase mb30">Заказ по своим размерам</div>
+   <form class="form validate row">
+      <div class="size-popup__l">
+         <div class="formgroup">
+            <span class="label label--reg grey">Тип поликарбоната</span>
+            <select class="main-select">
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+            </select>
+         </div>
+         <div class="formgroup formgroup--question">
+            <img src="img/question.svg" alt="icon">
+            <span class="label label--reg grey">Артикул</span>
+            <input type="text" placeholder="POLYSTRONG 125-258 4 мм" name="">
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Толщина поликарбоната</span>
+            <select class="main-select">
+               <option>8 мм</option>
+               <option>8 мм</option>
+               <option>8 мм</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Цвет</span>
+            <select class="main-select">
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+            </select>
+         </div>
+         <div class="formgroup formgroup--size">
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Ширина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Длина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Количество</span>
+               <input type="number" placeholder="0">
+            </div>
+         </div>
+         <div class="add-size">
+            <svg>
+               <use xlink:href='img/sprite.svg#plus'></use>
+            </svg>
+            Добавить размер
+         </div>
+      </div>
+      <div class="size-popup__r">
+         <div class="size-popup__img"></div>
+         <img src="img/size.jpg" alt="img" class="size-popup__img mb20">
+         <p class="fz14">При заказе резки или по исвоим размерам обратите внимание на рисунок расположения соты.
+            Заполняйте размер по ширине и длине правильно!</p>
+         <div class="size-popup__article">
+            <span>Артикул:</span>
+            POLYSTRONG 125-258 4 мм
+         </div>
+         <div class="size-popup__name mb30">Polystrong 125-258 сотовый поликарбонат 4 мм, серый</div>
+         <button class="btn-main">Отправить заявку</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup size-popup zoom-anim-dialog mfp-hide" id="size-category-popup">
+   <div class="title3 upercase mb30">Заказ по своим размерам</div>
+   <form class="form validate row">
+      <div class="size-popup__l">
+         <div class="formgroup">
+            <span class="label label--reg grey">Тип поликарбоната</span>
+            <select class="main-select">
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+               <option>Сотовый поликарбонат</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Производитель</span>
+            <select class="main-select">
+               <option>BORREX</option>
+               <option>BORREX</option>
+               <option>BORREX</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Толщина поликарбоната</span>
+            <select class="main-select">
+               <option>8 мм</option>
+               <option>8 мм</option>
+               <option>8 мм</option>
+            </select>
+         </div>
+         <div class="formgroup">
+            <span class="label label--reg grey">Цвет</span>
+            <select class="main-select">
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+               <option>Прозрачный</option>
+            </select>
+         </div>
+         <div class="formgroup formgroup--size">
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Ширина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Длина, мм</span>
+               <input type="number" placeholder="0">
+            </div>
+            <div class="formgroup--size__item">
+               <span class="label label--reg grey">Количество</span>
+               <input type="number" placeholder="0">
+            </div>
+         </div>
+         <div class="add-size">
+            <svg>
+               <use xlink:href='img/sprite.svg#plus'></use>
+            </svg>
+            Добавить размер
+         </div>
+      </div>
+      <div class="size-popup__r">
+         <div class="size-popup__img"></div>
+         <img src="img/size.jpg" alt="img" class="size-popup__img mb20">
+         <p class="fz14">При заказе резки или по исвоим размерам обратите внимание на рисунок расположения соты.
+            Заполняйте размер по ширине и длине правильно!</p>
+         <div class="size-popup__article">
+            <span>Артикул:</span>
+            POLYSTRONG 125-258 4 мм
+         </div>
+         <div class="size-popup__name mb30">Polystrong 125-258 сотовый поликарбонат 4 мм, серый</div>
+         <button class="btn-main">Отправить заявку</button>
+      </div>
+   </form>
+</div>
+
+<div class="popup send-popup zoom-anim-dialog mfp-hide" id="send-popup">
+   <div class="title3 send-popup__title upercase mb25">Готово!</div>
+   <p class="send-popup__text">Спасибо за Ваше обращение, заявка отправлена. В ближайшее время мы с Вами свяжемся и
+      уточним все детали, которые
+   </p>
+</div>
 
 
    <script src="scripts/jquery/jquery-3.4.1.min.js"></script>
-   <!-- <script src="scripts/show-more/jquery.show-more.js"></script>
-   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-   <script src="scripts/niceSelect/jquery.nice-select.min.js"></script>
+   <script src="scripts/magnific/jquery.magnific-popup.min.js"></script>
    <script src="scripts/jquery.validate/jquery.validate.min.js"></script>
-   <script src="scripts/mask/mask.js"></script> -->
+   <script src="scripts/mask/mask.js"></script>
+   <script src="scripts/niceSelect/jquery.nice-select.min.js"></script>
+   <script src="scripts/drag-drop-image-uploader/image-uploader.min.js"></script>
+   <script src="scripts/air-datepicker/air-datepicker.js"></script>
+
    <script src="scripts/fancybox/jquery.fancybox.min.js"></script>
    <script src="scripts/main.js"></script>
 </body>

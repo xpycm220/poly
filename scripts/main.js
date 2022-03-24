@@ -1,6 +1,4 @@
 $(document).ready(function () {
-   console.log('тралала');
-
    //Валидация
    $("input").attr("autocomplete", "off");
 
@@ -205,24 +203,42 @@ $(document).ready(function () {
    });
 
    //Прикрепить файлы
-   var inputImage = $('.input-images');
-   var inputImage2 = $('.input-images2');
-
-   if (inputImage.length != 0) {
-      $('.input-images').imageUploader({
+   $('.input-images').each(function () {
+      $(this).imageUploader({
          label: 'Перетащите сюда файлы или выберите файл',
          maxSize: 5 * 1024 * 1024, //Макс размер
          maxFiles: 5, //Макс кол. файлов
          extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg'],
       });
-   }
+   });
 
-   if (inputImage2.length != 0) {
-      $('.input-images2').imageUploader({
-         label: 'Перетащите сюда файлы или выберите файл',
-         maxSize: 5 * 1024 * 1024, //Макс размер
-         maxFiles: 5, //Макс кол. файлов
-         extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg'],
-      });
-   }
+
+   //Popup   
+   $('.btn-popup').magnificPopup({
+      type: 'inline',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in',
+   });
+
+   // sendForm();
+   function sendForm() {
+      $.magnificPopup.open({
+         items: {
+            src: '#send-popup'
+         },
+         type: 'inline',
+         mainClass: 'my-mfp-zoom-in',
+         removalDelay: 300,
+      }, 0);
+   };
+
+   new AirDatepicker('#picker', {
+      // inline: true
+   })
 });
