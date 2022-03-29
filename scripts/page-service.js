@@ -1,6 +1,6 @@
 var mainSlider = new Swiper(".work-slider", {
    slidesPerView: "auto",
-   spaceBetween: 30,
+   spaceBetween: 20,
    loop: false,
 
    navigation: {
@@ -11,6 +11,7 @@ var mainSlider = new Swiper(".work-slider", {
    breakpoints: {
       993: {
          slidesPerView: 2,
+         spaceBetween: 30,
       },
    },
 });
